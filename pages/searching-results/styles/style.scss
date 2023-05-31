@@ -198,6 +198,8 @@ body {
   align-items: start;
 }
 
+// product__menu-catalog
+
 .product__menu-catalog {
   padding: 21px 15px 15px 15px;
   width: 100%;
@@ -225,6 +227,7 @@ body {
 }
 
 .product__menu-catalog-item {
+  position: relative;
   width: 100%;
   padding: 19px 20px;
   display: flex;
@@ -235,6 +238,10 @@ body {
 
 .product__menu-catalog-item:last-child {
   border-bottom: none;
+}
+
+.product__menu-catalog-item:hover .menu-catalog-item__submenu {
+  display: block;
 }
 
 .menu-catalog-item__name {
@@ -255,6 +262,41 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+.menu-catalog-item__submenu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.menu-catalog-item__submenu-item {
+  width: 100%;
+  padding: 19px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu-catalog-item__submenu-item:hover .menu-catalog-item__submenu-item-link {
+  transition: 0.33s;
+  scale: 1.1;
+}
+
+.menu-catalog-item__submenu-item:last-child {
+  border: none;
 }
 
 // product__seaearching
