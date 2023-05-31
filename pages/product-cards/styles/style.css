@@ -462,7 +462,10 @@ body {
 }
 
 .product__contact-item {
-  list-style-image: url(../assets/icon/product-contact-item-text.svg);
+  padding-left: 35px;
+  background-image: url(../assets/icon/product-contact-item-text.svg);
+  background-repeat: no-repeat;
+  background-position: left 10px top 5px;
 }
 
 .product__contact-item-text {
@@ -533,7 +536,10 @@ body {
 }
 
 .product__conditions-item {
-  list-style-image: url(../assets/icon/check-mark.svg);
+  padding-left: 35px;
+  background-image: url(../assets/icon/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: left 5px top 5px;
 }
 
 .product__conditions-text {
