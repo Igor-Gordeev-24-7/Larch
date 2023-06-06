@@ -294,10 +294,11 @@ body {
 
 .footer__wrapper {
   padding-top: 88px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer__list {
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: start;
