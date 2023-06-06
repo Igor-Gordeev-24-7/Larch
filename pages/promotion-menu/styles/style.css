@@ -1,0 +1,811 @@
+@import url(./font.css);
+@import url(./reset.css);
+body {
+  background-color: #f8f8f8;
+}
+
+.header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrapper {
+  justify-content: space-between;
+}
+
+.header__header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-nav__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.header__header-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-form__input {
+  width: 300px;
+  height: 43px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.header-form__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.header__haeder-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.haeder-social__links {
+  width: 55px;
+  height: 57px;
+  display: grid;
+  grid-template-columns: 25px 25px;
+  justify-content: space-between;
+}
+
+.haeder-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.haeder-social__header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 13px;
+}
+
+.header-contacts__tel {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-contacts__tel-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product {
+  margin-top: 50px;
+}
+
+.product__wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.product__mini-menu {
+  width: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.product__columns {
+  margin-top: 50px;
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.product__menu {
+  width: 395px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.product__accordion {
+  padding: 21px 15px 15px 15px;
+  width: 355px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.accordion__subheading {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.accordion__items {
+  margin-top: 11px;
+}
+
+.accordion__item {
+  cursor: pointer;
+  padding: 19px 24px 19px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.accordion__item[open] .accordion__titel::after {
+  content: "-";
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 6px;
+  transition: 0.33s all;
+}
+
+.accordion__titel {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.accordion__titel::after {
+  content: "+";
+  font-size: 25px;
+  font-weight: 300;
+  transition: 0.33s all;
+}
+
+.accordion__item-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.accordion__item-link {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  transition: 0.33s;
+}
+
+.accordion__item-link:hover {
+  scale: 1.1;
+}
+
+.product__about-product {
+  width: 1104px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-product__card {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+
+.about-product__card-img {
+  width: 400px;
+  height: 400px;
+}
+
+.about-product__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-product__card-heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-product__card-description {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-product__card-text {
+  margin-top: 34px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #4e9f3d;
+}
+
+.about-product__card-btn {
+  padding: 16px 30px;
+  margin-top: 37px;
+  background: #e17d21;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.product__about-dimensions {
+  width: 100%;
+  margin-top: 80px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.about-dimensions__heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.about-dimensions__item {
+  padding: 10px;
+  background: #000000;
+  border-radius: 15px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.product__about-table {
+  margin-top: 70px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.table__thead {
+  background: #191a19;
+}
+
+.table__thead th {
+  padding: 14px;
+}
+
+.table__thead-item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.table__tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.table__tbody-item td {
+  padding: 12px;
+}
+
+.table__tbody-size {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.table__tbody-type {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.table__tbody-class {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.table__tbody-price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.table__tbody-btn {
+  cursor: pointer;
+  padding: 8px 24px;
+  background: #1e5128;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.product__contact {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.subheading {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.product__contact-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  padding: 30px 20px 30px 50px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.product__contact-item {
+  padding-left: 35px;
+  background-image: url(../assets/icon/product-contact-item-text.svg);
+  background-repeat: no-repeat;
+  background-position: left 10px top 5px;
+}
+
+.product__contact-item-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.advertising {
+  margin-top: 70px;
+  padding: 28px 80px 28px 50px;
+  width: 100%;
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../assets/img/circle-blue.svg), url(../assets/img/circle-red.svg), #191a19;
+  background-repeat: no-repeat;
+  background-position: right top, left top, center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 15px rgba(40, 54, 58, 0.15);
+  border-radius: 10px;
+}
+
+.advertising__text {
+  max-width: 525px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.advertising__btn {
+  cursor: pointer;
+  padding: 13px 23px;
+  background: #e17d21;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.product__conditions {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.product__conditions-list {
+  margin-top: 30px;
+  padding: 30px 90px 30px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  background: #ffffff;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.product__conditions-item {
+  padding-left: 35px;
+  background-image: url(../assets/icon/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: left 5px top 5px;
+}
+
+.product__conditions-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.product__other-goods {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.goods__cards {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(340px, 352px));
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+
+.goods__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 19px 15px 19px;
+  background: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.goods__card-img {
+  max-width: 315px;
+  max-height: 265px;
+}
+
+.goods__card-name {
+  margin-top: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.goods__card-type {
+  margin-top: 13px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.goods__card-price {
+  margin-top: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1e5128;
+}
+
+.goods__card-box {
+  margin-top: 21px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goods__card-link {
+  padding: 7px 55px;
+  background: #e17d21;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.goods__card-discount {
+  padding: 7px 16px;
+  background: #1e5128;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.product__low-price {
+  position: relative;
+  margin-top: 70px;
+}
+
+.low-price__link {
+  position: absolute;
+  right: 0;
+  bottom: -54px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.product__bestseller {
+  margin-top: 140px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.bestseller__btn-box {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bestseller__btn {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 101px;
+  width: 100%;
+  height: 500px;
+  background: #191a19;
+}
+
+.footer__wrapper {
+  padding-top: 88px;
+  justify-content: space-around;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+
+.footer__list-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__subheading {
+  font-family: "Rounded Elegance";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__box-text {
+  margin-top: 31px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer__box-link {
+  margin-top: 72px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer__search {
+  width: 300px;
+  height: 43px;
+  position: relative;
+}
+
+.footer__search-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.footer__search-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+}
+
+.footer__contact {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer__social {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__contact-tel {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer__contact-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

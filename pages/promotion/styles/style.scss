@@ -1,0 +1,472 @@
+@import url(./font.css);
+@import url(./reset.css);
+
+$grey-color: #8d8d8d;
+$bg-color: #f8f8f8;
+$base-color: #000000;
+$green-light-color: #4e9f3d;
+$green-dark-color: #1e5128;
+$green-pale-color: #d8e9a8;
+$dark-color: #191a19;
+$orange-color: #e17d21;
+$rounded-elegance: "Rounded Elegance";
+$inter: "Inter";
+
+body {
+  background-color: $bg-color;
+}
+
+// HEADER
+
+.header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrapper {
+  justify-content: space-between;
+}
+
+.header__header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-nav__link {
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $base-color;
+}
+
+.header__header-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-form__input {
+  width: 300px;
+  height: 43px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.header-form__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.header-form__svg {
+}
+
+.header__haeder-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.haeder-social__links {
+  width: 55px;
+  height: 57px;
+  display: grid;
+  grid-template-columns: 25px 25px;
+  justify-content: space-between;
+}
+
+.haeder-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.haeder-social__img {
+}
+
+.haeder-social__header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 13px;
+}
+
+.header-contacts__tel {
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $base-color;
+}
+
+.header-contacts__tel-btn {
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: $base-color;
+}
+
+// MAIN
+
+.main {
+}
+
+// PRODUCT
+
+.product {
+  margin-top: 50px;
+}
+
+.product__wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.product__mini-menu {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.product__mini-menu-item {
+}
+
+// product__column
+
+.product__column {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+// product__heading
+
+.product__heading {
+  font-family: $rounded-elegance;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+// advertising
+
+.advertising {
+  margin-top: 40px;
+  padding: 28px 80px 28px 50px;
+  width: 100%;
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../assets/img/circle-blue.svg),
+    url(../assets/img/circle-red.svg), $dark-color;
+  background-repeat: no-repeat;
+  background-position: right top, left top, center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 15px rgba(40, 54, 58, 0.15);
+  border-radius: 10px;
+}
+
+.advertising__text {
+  max-width: 525px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.advertising__btn {
+  cursor: pointer;
+  padding: 13px 23px;
+  background: $orange-color;
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+// product__goods
+
+.product__goods {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.goods__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(340px, 352px));
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+.goods__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 19px 15px 19px;
+  background: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.goods__card-img {
+  max-width: 312px;
+  max-height: 263px;
+}
+
+.goods__card-name {
+  margin-top: 12px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.goods__card-type {
+  margin-top: 13px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.goods__card-price {
+  margin-top: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: $green-dark-color;
+}
+
+.goods__card-box {
+  margin-top: 21px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goods__card-link {
+  padding: 7px 55px;
+  background: #e17d21;
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.goods__card-discount {
+  padding: 7px 16px;
+  background: $green-dark-color;
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+// FOOTER
+
+.footer {
+  margin-top: 101px;
+  width: 100%;
+  height: 500px;
+  background: $dark-color;
+}
+
+.footer__wrapper {
+  padding-top: 88px;
+  justify-content: space-around;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+
+.footer__list-link {
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__subheading {
+  font-family: "Rounded Elegance";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__box-text {
+  margin-top: 31px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer__box-link {
+  margin-top: 72px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer__search {
+  width: 300px;
+  height: 43px;
+  position: relative;
+}
+
+.footer__search-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.footer__search-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+}
+
+.footer__contact {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer__social {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__contact-tel {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer__contact-btn {
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}
