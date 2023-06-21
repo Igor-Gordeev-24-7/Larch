@@ -16,6 +16,13 @@ body {
   background-color: $bg-color;
 }
 
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 // HEADER
 
 .header {
@@ -845,7 +852,6 @@ body {
 // FOOTER
 
 .footer {
-  margin-top: 101px;
   width: 100%;
   height: 500px;
   background: $dark-color;
@@ -853,10 +859,11 @@ body {
 
 .footer__wrapper {
   padding-top: 88px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer__list {
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -879,7 +886,8 @@ body {
 }
 
 .footer__subheading {
-  font-family: "Rounded Elegance";
+  cursor: pointer;
+  font-family: $rounded-elegance;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -900,6 +908,7 @@ body {
 }
 
 .footer__box-link {
+  cursor: pointer;
   margin-top: 72px;
   font-family: "Roboto Flex";
   font-style: normal;
