@@ -4,6 +4,13 @@ body {
   background-color: #f8f8f8;
 }
 
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   height: 120px;
   display: flex;
