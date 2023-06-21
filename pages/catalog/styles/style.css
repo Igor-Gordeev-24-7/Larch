@@ -4,6 +4,13 @@ body {
   background-color: #f8f8f8;
 }
 
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   height: 120px;
   display: flex;
@@ -178,6 +185,10 @@ body {
   color: #000000;
 }
 
+.main {
+  flex: 1 1 auto;
+}
+
 .product {
   margin-top: 50px;
 }
@@ -218,22 +229,6 @@ body {
   color: #000000;
 }
 
-.advertising {
-  margin-top: 40px;
-  padding: 28px 80px 28px 50px;
-  width: 100%;
-  height: 117px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: url(../assets/img/circle-blue.svg), url(../assets/img/circle-red.svg), #191a19;
-  background-repeat: no-repeat;
-  background-position: right top, left top, center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 7px 15px rgba(40, 54, 58, 0.15);
-  border-radius: 10px;
-}
-
 .advertising__text {
   max-width: 525px;
   font-family: "Inter";
@@ -242,6 +237,16 @@ body {
   font-size: 20px;
   line-height: 150%;
   color: #ffffff;
+}
+
+.product__text {
+  margin-top: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .advertising__btn {
@@ -265,7 +270,7 @@ body {
 .goods__cards {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(340px, 352px));
+  grid-template-columns: repeat(3, minmax(470px, 480px));
   grid-template-rows: 1fr;
   justify-content: space-between;
   row-gap: 40px;
@@ -282,8 +287,8 @@ body {
 }
 
 .goods__card-img {
-  max-width: 312px;
-  max-height: 263px;
+  max-width: 440px;
+  max-height: 265px;
 }
 
 .goods__card-name {
@@ -353,19 +358,42 @@ body {
   color: #ffffff;
 }
 
+.product__btn-box {
+  margin-top: 40px;
+  margin-bottom: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__searching-btn {
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
 .footer {
-  margin-top: 101px;
+  margin-top: auto;
   width: 100%;
   height: 500px;
   background: #191a19;
 }
 
 .footer__wrapper {
+  flex-direction: row;
   padding-top: 88px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer__list {
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -488,7 +516,6 @@ body {
 }
 
 .footer__contact-btn {
-  cursor: pointer;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
