@@ -200,6 +200,7 @@ body {
 }
 
 .footer__subheading {
+  cursor: pointer;
   font-family: "Rounded Elegance";
   font-style: normal;
   font-weight: 400;
