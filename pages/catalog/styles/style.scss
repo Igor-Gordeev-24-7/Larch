@@ -94,6 +94,7 @@ body {
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
+
 .header-form__search-item {
   padding: 10px 5px;
   display: flex;
@@ -101,16 +102,19 @@ body {
   gap: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
 .header-form__search-img {
   width: 100px;
   height: 90px;
 }
+
 .header-form__search-content {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
 }
+
 .header-form__search-name {
   font-family: $inter;
   font-style: normal;
@@ -119,6 +123,7 @@ body {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.7);
 }
+
 .header-form__search-price-box {
   margin-top: 27px;
   display: flex;
@@ -130,8 +135,10 @@ body {
   line-height: 24px;
   color: $green-dark-color;
 }
+
 .header-form__search-price {
 }
+
 .header-form__search-dimensions {
   margin-top: 3px;
   font-family: $inter;
@@ -213,7 +220,7 @@ body {
 }
 
 .product__mini-menu {
-  width: 194px;
+  width: 210px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -228,8 +235,19 @@ body {
 .product__mini-menu-item {
 }
 
+// product__column
+
+.product__column {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+// product__heading
+
 .product__heading {
-  margin-top: 40px;
   font-family: $rounded-elegance;
   font-style: normal;
   font-weight: 400;
@@ -239,6 +257,145 @@ body {
   color: #000000;
 }
 
+// advertising
+
+.advertising {
+  margin-top: 40px;
+  padding: 28px 80px 28px 50px;
+  width: 100%;
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../assets/img/circle-blue.svg),
+    url(../assets/img/circle-red.svg), $dark-color;
+  background-repeat: no-repeat;
+  background-position: right top, left top, center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 15px rgba(40, 54, 58, 0.15);
+  border-radius: 10px;
+}
+
+.advertising__text {
+  max-width: 525px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.advertising__btn {
+  cursor: pointer;
+  padding: 13px 23px;
+  background: $orange-color;
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+// product__goods
+
+.product__goods {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.goods__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(340px, 352px));
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+.goods__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 19px 15px 19px;
+  background: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.goods__card-img {
+  max-width: 312px;
+  max-height: 263px;
+}
+
+.goods__card-name {
+  margin-top: 12px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.goods__card-type {
+  margin-top: 13px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.goods__card-price {
+  margin-top: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: $green-dark-color;
+}
+
+.goods__card-box {
+  margin-top: 21px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goods__card-link {
+  padding: 7px 55px;
+  background: #e17d21;
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.goods__card-discount {
+  padding: 7px 16px;
+  background: $green-dark-color;
+  border-radius: 5px;
+  font-family: $inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
 
 // FOOTER
 
