@@ -244,6 +244,7 @@ body {
 }
 
 .product__selector-btn {
+  cursor: pointer;
   padding: 3px 24px;
   background: #ffffff;
   border: 1px solid #000000;
@@ -258,6 +259,7 @@ body {
 }
 
 .product__selector-btn--dark {
+  cursor: pointer;
   padding: 3px 24px;
   background: $dark-color;
   border-radius: 20px;
